@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>ESP Server</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="bncache.js"></script> 
+  <script src="jquery.js"></script>
+  <script src="interaction.js"></script>
+  <script>
+      $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show');
+        });
+      });
+  </script>
+</head>
+<body>
+    <nav>
+        <label class="logo"> NAKINDYA +</label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" onclick="actionAFaire('jour')">Mode jour</a></li>
+            <li><a href="#" onclick="actionAFaire('nuit')">Mode nuit</a></li>
+            <li><a href="#" onclick="actionAFaire('eteindre')">Eteindre</a></li>
+            <li><a href="#" onclick="actionAFaire('allumer')">Allumer</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <section>
+        <img src="gb1.jpg">
+    </section>
+
+</body>
+</html>
