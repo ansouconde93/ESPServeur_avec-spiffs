@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <../.pio/libdeps/esp32dev/ESP Async WebServer/src/ESPAsyncWebServer.h>
 #include <SPIFFS.h>
-const char* ssid = "TOPNET_96D0";
-const char* password ="aguiboubayo";
+const char* ssid = "your connexion ssid here";
+const char* password ="your connexion password here";
 AsyncWebServer server(80);
 
 const int pwmPin = 16;
